@@ -17,6 +17,7 @@ for n in series_1:
     end_time = time.time()
     execution_time = end_time - start_time
     execution_times_series_1.append(execution_time)
+    print(f"For n = {n} (Series 1), execution time is {execution_time:.6f} seconds.")
 
 execution_times_series_2 = []
 for n in series_2:
@@ -25,6 +26,7 @@ for n in series_2:
     end_time = time.time()
     execution_time = end_time - start_time
     execution_times_series_2.append(execution_time)
+    print(f"For n = {n} (Series 2), execution time is {execution_time:.6f} seconds.")
 
 # Plotting the results for series 1
 plt.plot(series_1, execution_times_series_1, marker='o', label='Series 1')
