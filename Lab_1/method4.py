@@ -1,3 +1,7 @@
+import math
+from decimal import Decimal, getcontext
+import time
+import matplotlib.pyplot as plt
 
 def fibonacci_binet(n):
     getcontext().prec = 100
