@@ -78,7 +78,7 @@ def measure_kruskal(graph):
     return timeit.timeit(lambda: kruskal(graph), number=1)
 
 # Experiment setup
-sizes = [10, 20, 30, 40, 50]
+sizes = list(range(10, 201, 10))  # Additional sizes from 10 to 200
 results_prim = []
 results_kruskal = []
 
