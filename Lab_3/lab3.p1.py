@@ -75,6 +75,5 @@ class GraphAnalyzer:
         plt.grid(True)
         plt.show()
 
-# Example usage:
 analyzer = GraphAnalyzer()
 analyzer.analyze()
